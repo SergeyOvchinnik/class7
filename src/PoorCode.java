@@ -70,22 +70,13 @@ return indexOfTopEven;}
 	
 	public static boolean evaluateConditions(boolean a,boolean b, int c) {
 		if(c >0) {
-			if(a == false) {
-				if(b == true) {
-					return true ;
-				} else {
-					return false;
-				}
+			if(a == b) {
+				return false;
 			}
-			else {
-				if(b == false){
-					return true;
-				}
-				else
-				{
-					return false;
-				}
+			if(a || b) {
+				return true;
 			}
+			
 		}
 		else 
 			if(c < 0) {
