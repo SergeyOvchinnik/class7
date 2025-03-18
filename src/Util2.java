@@ -40,12 +40,16 @@ public class Util2 {
 	
 	// Checks if n is a prime number 
 	public static boolean prime(int n) {
-		for(int i = 1; i <= n; i++) {
-			if(n % i == 0)
-				return false;
-		}
-		return true;
-	}
+    if (n <= 1)  // 0 and 1 are not prime
+        return false;
+        
+    for (int i = 2; i <= Math.sqrt(n); i++) {  // Only check up to sqrt(n)
+        if (n % i == 0)
+            return false; // Divisible by something other than 1 and itself
+    }
+    return true; // No divisors found, it's prime
+}
+
 	
 	public static String arrayMaxMin(int[] arr) {
 		int max = arr[0];
