@@ -52,7 +52,10 @@ public class Utilities {
 	// False otherwise
 	// E.g. ordered(1, 2, 3, 4) is true but ordered(1, 2, 4, 3) is false
 	public static boolean ordered(int a, int b, int c, int d) {
+		
+		if(a < b && b < c && c < d) { // Checks that each variable is smaller then it's sequel.
+			return true;
+		}
 		return false; // TODO: implement
 	}
-
 }
