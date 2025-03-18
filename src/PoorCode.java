@@ -4,7 +4,7 @@ public class PoorCode {
 
 	public static void main(String[] args) {
 		
-		x("Mr", "Sergey", "Ovchinnik");
+		greeting("Mr", "Sergey", "Ovchinnik");
 		
 		System.out.println();
 		
@@ -42,15 +42,15 @@ public class PoorCode {
 	}
 	
 	/*
-	 * Method x
+	 * Method greeting
 	 * 
 	 * Takes in three string parameters and prints out the greeting
 	 * 
 	 * First parameter serves as the title, second as the first name and second is the surname
 	 * 
 	 */
-	public static void x(String a, String b, String c) {
-		System.out.println("Hello, " + a + " " + b + " " + c);
+	public static void greeting(String title, String firstName, String surname) {
+		System.out.println("Hello, " + title + " " + firstName + " " + surname);
 	}
 	
 public 
