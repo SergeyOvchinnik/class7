@@ -163,7 +163,13 @@ return indexOfTopEven;}
 		
 	}
 	
-	public static double[] b(double[] arr) {
+	/*
+	 * Method selectionSort
+	 * 
+	 * Sort an array using the selection sort algorithm
+	 * 
+	 */
+	public static double[] selectionSort(double[] arr) {
 		double[] sortingArr = Arrays.copyOf(arr, arr.length);
 		for(int i = 0; i < sortingArr.length - 1; i++)
 			for(int j = i + 1; j < sortingArr.length; j++)
